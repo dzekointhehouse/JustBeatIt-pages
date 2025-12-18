@@ -1,6 +1,6 @@
 # Dancing Feet - Terms of Service
 
-**Last Updated:** [Date]
+**Last Updated:** 18-12-2025
 
 ## 1. Introduction
 Welcome to Dancing Feet ("we," "us," or "our"). These Terms of Service ("Terms") govern your access to and use of the Dancing Feet mobile application and related services (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, please do not use the Service.
@@ -40,10 +40,10 @@ To the maximum extent permitted by law, in no event shall Dancing Feet, its dire
 Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.
 
 ## 10. Governing Law
-These Terms shall be governed and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.
+These Terms shall be governed and construed in accordance with the laws of Sweden, without regard to its conflict of law provisions.
 
 ## 11. Changes
 We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.
 
 ## 12. Contact Us
-If you have any questions about these Terms, please contact us at [Your Support Email].
+If you have any questions about these Terms, please contact us at xyzeee.code@gmail.com.
