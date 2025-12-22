@@ -137,13 +137,27 @@
             margin: 40px 0;
             position: relative;
             z-index: 1;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 100vw;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .app-preview-container::-webkit-scrollbar {
+            display: none;
         }
 
         .app-preview {
-            max-width: 220px;
-            width: 100%;
+            flex: 0 0 auto;
+            width: 220px;
             border-radius: 20px;
             box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            scroll-snap-align: center;
         }
 
         .description {
@@ -207,6 +221,16 @@
             text-decoration: none;
         }
 
+        @media (max-width: 900px) {
+            .app-preview-container {
+                padding: 20px 40px;
+            }
+
+            .app-preview {
+                width: 180px;
+            }
+        }
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 36px;
@@ -214,6 +238,7 @@
 
             .tagline {
                 font-size: 18px;
+                padding: 0 10px;
             }
 
             .logo {
@@ -233,6 +258,15 @@
 
             .store-btn {
                 padding: 12px 20px;
+            }
+
+            .app-preview-container {
+                padding: 20px 20px;
+                gap: 15px;
+            }
+
+            .app-preview {
+                width: 160px;
             }
 
             .description {
