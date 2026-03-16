@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.elvirdzeko.dancingfeet",
+      "sha256_cert_fingerprints": [
+        "E4:F0:0C:E1:AA:73:FC:2C:C7:7F:E8:DC:D9:4E:89:33:B4:12:62:A7:1E:21:7C:6C:91:5D:67:1F:EB:9D:6A:BD"
+      ]
+    }
+  }
+]
