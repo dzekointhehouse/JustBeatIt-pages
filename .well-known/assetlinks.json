@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.elvirdzeko.dancingfeet",
       "sha256_cert_fingerprints": [
-        "E4:F0:0C:E1:AA:73:FC:2C:C7:7F:E8:DC:D9:4E:89:33:B4:12:62:A7:1E:21:7C:6C:91:5D:67:1F:EB:9D:6A:BD"
+        "E4:F0:0C:E1:AA:73:FC:2C:C7:7F:E8:DC:D9:4E:89:33:B4:12:62:A7:1E:21:7C:6C:91:5D:67:1F:EB:9D:6A:BD",
+        "F4:E4:80:29:CF:E7:7B:6A:7B:BA:CA:D1:92:28:7E:50:BA:B2:86:61:C5:C6:B5:D0:D4:34:F4:C5:B2:CC:FC:A8"
       ]
     }
   }
