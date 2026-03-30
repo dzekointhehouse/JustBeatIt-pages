@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dancing Feet - Open in App</title>
+  <title>Dancing Feet - Dance Event</title>
+  <meta name="apple-itunes-app" content="app-id=6740611538, app-argument=https://dancingfeet.app/share/organizer">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -30,28 +31,55 @@
       font-size: 17px;
       font-weight: 600;
       transition: background 0.2s;
+      margin-bottom: 12px;
     }
     .btn:hover { background: #c73652; }
+    .btn-secondary {
+      display: inline-block;
+      padding: 12px 28px;
+      background: transparent;
+      color: #b0b0c0;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 15px;
+      border: 1px solid #404060;
+      transition: border-color 0.2s;
+    }
+    .btn-secondary:hover { border-color: #b0b0c0; }
     .note { font-size: 13px; color: #707080; margin-top: 24px; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Dancing Feet</h1>
-    <p>Someone shared a dance event with you. Get the app to view it.</p>
-    <a id="store-link" class="btn" href="#">Download App</a>
-    <p class="note">Already have the app? Tap the link again after installing.</p>
+    <p>Someone shared a dance event with you.</p>
+    <a id="open-app" class="btn" href="#">Open in App</a>
+    <br>
+    <a id="store-link" class="btn-secondary" href="#">Don't have the app? Download it</a>
   </div>
   <script>
     (function() {
       var ua = navigator.userAgent || navigator.vendor || window.opera;
-      var link = document.getElementById('store-link');
-      if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-        link.href = 'https://apps.apple.com/app/dancing-feet';
-        link.textContent = 'Download on the App Store';
+      var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var storeLink = document.getElementById('store-link');
+      var openApp = document.getElementById('open-app');
+      var query = window.location.search;
+
+      if (isIOS) {
+        storeLink.href = 'https://apps.apple.com/app/dancing-feet';
+        storeLink.textContent = "Don't have the app? App Store";
+        openApp.href = storeLink.href;
+        openApp.textContent = 'Download on the App Store';
       } else {
-        link.href = 'https://play.google.com/store/apps/details?id=com.elvirdzeko.dancingfeet';
-        link.textContent = 'Get it on Google Play';
+        storeLink.href = 'https://play.google.com/store/apps/details?id=com.elvirdzeko.dancingfeet';
+        storeLink.textContent = "Don't have the app? Google Play";
+        openApp.href = 'intent://dancingfeet.app/share/organizer' + query
+          + '#Intent;scheme=https;package=com.elvirdzeko.dancingfeet;end';
+      }
+
+      // Auto-attempt to open the app
+      if (!isIOS) {
+        window.location.href = openApp.href;
       }
     })();
   </script>
